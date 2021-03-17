@@ -9,22 +9,22 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   color: #444444;
 }
 
 a {
-  color: #cc1616;
+  color: #7868e6;
   text-decoration: none;
 }
 
 a:hover {
-  color: #e82d2d;
+  color: #845ec2;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Futura", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #cc1616;
+  background: #7868e6;
   width: 40px;
   height: 40px;
   transition: all 0.4s;
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #e72323;
+  background: #6930c3;
   color: #fff;
 }
 
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #7d3cff;
 }
 
 #preloader:before {
@@ -78,13 +78,13 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #cc1616;
+  border: 6px solid #7d3cff;
   border-top-color: #efefef;
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
+  -webkit-animation: animate-preloader 2s linear infinite;
+  animation: animate-preloader 2s linear infinite;
 }
 
 @-webkit-keyframes animate-preloader {
@@ -114,48 +114,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Top Bar
---------------------------------------------------------------*/
-#topbar {
-  background: #191919;
-  font-size: 15px;
-  height: 40px;
-  padding: 0;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-#topbar .contact-info a {
-  line-height: 0;
-  color: rgba(255, 255, 255, 0.6);
-  transition: 0.3s;
-}
-
-#topbar .contact-info a:hover {
-  color: #fff;
-}
-
-#topbar .contact-info i {
-  color: #cc1616;
-  line-height: 0;
-  margin-right: 5px;
-}
-
-#topbar .contact-info .phone-icon {
-  margin-left: 15px;
-}
-
-#topbar .social-links a {
-  color: rgba(255, 255, 255, 0.6);
-  padding: 4px 12px;
-  display: inline-block;
-  line-height: 1px;
-  transition: 0.3s;
-}
-
-#topbar .social-links a:hover {
-  color: #fff;
-}
 
 /*--------------------------------------------------------------
 # Header
@@ -168,21 +126,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.fixed-top {
-  background: #191919;
+  background: #101357;
 }
 
 #header .logo {
-  font-size: 30px;
+  font-size: 32px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-weight: 900;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 #header .logo a {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 #header .logo img {
@@ -237,7 +196,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  background: #cc1616;
+  background: #101357;
+  color: #5426d1;
 }
 
 .navbar .dropdown ul {
@@ -250,8 +210,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #101357;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
   transition: 0.3s;
 }
 
@@ -261,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  color: #191919;
+  color: #ffffff;
 }
 
 .navbar .dropdown ul a i {
@@ -269,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #fff;
+  color:#5426d1;
 }
 
 .navbar .dropdown:hover > ul {
@@ -305,7 +265,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 .mobile-nav-toggle {
   color: #fff;
-  font-size: 28px;
+  font-size: 10px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -313,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #cc1616;
+  color: #5426d1;
 }
 
 @media (max-width: 991px) {
@@ -409,7 +369,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: calc(100vh - 110px);
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/Website-Background.png") top right;
   background-size: cover;
   position: relative;
 }
@@ -426,9 +386,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
+  font-size: 78px;
+  font-weight: 800;
+  line-height: 86px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -436,25 +396,26 @@ h1, h2, h3, h4, h5, h6 {
 #hero h2 {
   color: #eee;
   margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 34px;
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Futura", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 24px;
   letter-spacing: 0.5px;
   display: inline-block;
-  padding: 10px 28px;
+  padding: 15px 40px;
   transition: 0.5s;
-  border: 2px solid #fff;
+  border: 2px solid #ffff;
   color: #fff;
 }
 
 #hero .btn-get-started:hover {
-  background: #cc1616;
-  border-color: #cc1616;
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
 }
 
 @media (min-width: 1024px) {
@@ -496,7 +457,8 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 52px;
+  font-family: "Futura", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -540,7 +502,8 @@ section {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 46px;
+  font-family: "Futura", sans-serif;
 }
 
 .about .content ul {
@@ -555,7 +518,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #cc1616;
+  color: #000000;
 }
 
 .about .content p:last-child {
@@ -571,15 +534,16 @@ section {
 
 .why-us .box {
   padding: 50px 30px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(240, 216, 216, 0.1);
   transition: all ease-in-out 0.3s;
+  
 }
 
 .why-us .box span {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #ed5b5b;
+  color: #0b1354;
 }
 
 .why-us .box h4 {
@@ -587,18 +551,18 @@ section {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: #191919;
+  color: #303a99;
 }
 
 .why-us .box p {
-  color: #aaaaaa;
+  color: #7a7a7a;
   font-size: 15px;
   margin: 0;
   padding: 0;
 }
 
 .why-us .box:hover {
-  background: #cc1616;
+  background: #0b1354;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -1409,4 +1373,7 @@ section {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+}
+.portfolio-images{
+  width: 40%;
 }
