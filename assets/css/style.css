@@ -83,8 +83,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  -webkit-animation: animate-preloader 2s linear infinite;
-  animation: animate-preloader 2s linear infinite;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
 }
 
 @-webkit-keyframes animate-preloader {
@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo {
   font-size: 32px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Helvetica';
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 .scrolled-offset {
@@ -725,6 +725,13 @@ section {
   text-align: center;
   border-radius: 50px;
 }
+.portfolio{
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Nate\'s\ Intro.png") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+
+ 
+}
 
 .portfolio #portfolio-flters li {
   cursor: pointer;
@@ -737,11 +744,11 @@ section {
   color: #444444;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
-  font-family: "Poppins", sans-serif;
+  font-family: "Futura", sans-serif;
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #e82d2d;
+  color: #2b2397;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -750,6 +757,7 @@ section {
 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  
 }
 
 .portfolio .portfolio-item .portfolio-info {
@@ -987,7 +995,7 @@ section {
   margin-bottom: 15px;
   background: #191919;
   color: #fff;
-  border-top: 4px solid #02006e;
+  border-top: 4px solid #1916cc;
   text-align: center;
   padding: 30px 20px;
 }
